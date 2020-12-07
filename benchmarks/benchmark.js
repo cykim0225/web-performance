@@ -23,7 +23,6 @@ while (iterations--) {
 
 performance.mark('end');
 
-performance.measure('My Special Benchmark', 'start', 'end');
+console.log(performance.measure('My Special Benchmark', 'start', 'end'), '1');
 
-const [ measure ] = performance.getEntriesByName('My Special Benchmark');
-console.log(measure);
+// console.log(performance.getEntriesByName('My Special Benchmark'));
